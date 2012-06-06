@@ -1,0 +1,12 @@
+.preview {
+  float: left;
+}
+
+.preview ul {
+  list-style-type: none;
+}
+
+.preview ul canvas {
+  width: 300px;
+  height: 300px;
+}

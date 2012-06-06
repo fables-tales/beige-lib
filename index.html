@@ -1,0 +1,68 @@
+<!doctype html>
+  <head>
+    <title>Beige</title>
+    <link href="src/styles.css" rel="stylesheet">
+    <script src="vendor/jquery-1.7.2.js"></script>
+    <script src="vendor/color.js"></script>
+    <script src="src/beige.js"></script>
+    <script src="src/utils.js"></script>
+  </head>
+  <body>
+    <section class='preview'>
+      <ul>
+        <li><canvas data-lightness='1'></canvas></li>
+        <li><canvas data-lightness='0.9'></canvas></li>
+        <li><canvas data-lightness='0.8'></canvas></li>
+        <li><canvas data-lightness='0.7'></canvas></li>
+        <li><canvas data-lightness='0.6'></canvas></li>
+        <li><canvas data-lightness='0.5'></canvas></li>
+        <li><canvas data-lightness='0.4'></canvas></li>
+        <li><canvas data-lightness='0.2'></canvas></li>
+        <li><canvas data-lightness='0'></canvas></li>
+      </ul>
+    </section>
+    <form id='coefficients'>
+      <ol>
+        <li>
+          <label for='minLightness'>Min Lightness</label>
+          <input id='minLightness'>
+        </li>
+        <li>
+          <label for='maxLightness'>Max Lightness</label>
+          <input id='maxLightness'>
+        </li>
+        <li>
+          <label for='minSaturation'>Min Saturation</label>
+          <input id='minSaturation'>
+        </li>
+        <li>
+          <label for='maxSaturation'>Max Saturation</label>
+          <input id='maxSaturation'>
+        </li>
+        <li>
+          <label for='maxHue'>Max Hue</label>
+          <input id='maxHue'>
+        </li>
+        <li>
+          <label for='minHue'>Min Hue</label>
+          <input id='minHue'>
+        </li>
+        <li>
+          <label for='pointLightness'>Point Lightness</label>
+          <input id='pointLightness'>
+        </li>
+        <li>
+          <label for='pointHue'>Point Hue</label>
+          <input id='pointHue'>
+        </li>
+        <li>
+          <label for='pointSaturation'>Point Saturation</label>
+          <input id='pointSaturation'>
+        </li>
+        <li>
+          <input type='submit'>
+        </li>
+      </ol>
+    </form>
+  </body>
+</html>
