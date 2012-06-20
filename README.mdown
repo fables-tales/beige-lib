@@ -48,6 +48,7 @@ Plotting
 ========
 
 * in spec/javascripts there's a plotter called plot.py
+* install matplotlib: `easy_install matplotlib`
 * change into that directory
 * run:
 `cat BeigeSpec.js | grep -i "true" | grep -o "#......" > beige_colors.txt` 
