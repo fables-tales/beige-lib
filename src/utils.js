@@ -95,16 +95,36 @@ $(function(){
   };
   
   defaults = {
-    maxSaturation: 1,
+    maxSaturation: 1.1,
     minSaturation: 0.1,
-    minHue: 0,
-    maxHue: 60,
+    minHue: -1,
+    maxHue: 61,
     minLightness: 0.3,
     maxLightness: 0.96,
-    pointLightness: 0.3,
+    pointLightness: -0.6,
     pointHue: 30,
     pointSaturation: 0.3
   };
+  
+  var beigeLists = function(){
+    $(".beiges li").each(function(i,e){
+      var $li = $(e);
+      var value = $li.data('value');
+
+      var r = Beige.is(value);
+      var background = r ? "green" : "red";
+
+      var c = new net.brehaut.Color(value);
+
+      $li.text(value + ", Hue " + c.getHue() + ", Sat " + c.getSaturation() + ", Lightness " + c.getLightness());
+
+      $li.css('background-color', value);
+      $li.css('border-color', background);
+      $li.css('border-width', "5px");
+      $li.css('border-style', "solid");
+    });
+  };
+  
   
   $("form#coefficients").each(function(i,form){
     
@@ -144,7 +164,8 @@ $(function(){
       };
 
       renderCanvases();
-
+      beigeLists();
+      
       e.preventDefault();
     });
     

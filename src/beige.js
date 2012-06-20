@@ -7,7 +7,7 @@ Beige = (function(){
   var validLightness = function(c){
     var l = c.getLightness();
     
-    return l > Beige.coefficients.minLightness && l < Beige.coefficients.maxLightness;
+    return l >= Beige.coefficients.minLightness && l <= Beige.coefficients.maxLightness;
   };
   
   var withinHueRange = function(c){
@@ -28,7 +28,7 @@ Beige = (function(){
     
     var hue = c.getHue();
     
-    return hue > minHue(c) && hue < maxHue(c);
+    return hue >= minHue(c) && hue <= maxHue(c);
   };
   
   var withinSaturationRange = function(c){
@@ -50,7 +50,7 @@ Beige = (function(){
     
     var sat = c.getSaturation();
     
-    return sat > minSaturation(c) && sat < maxSaturation(c);
+    return sat >= minSaturation(c) && sat <= maxSaturation(c);
   };
 
 
