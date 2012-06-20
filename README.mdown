@@ -43,3 +43,15 @@ TODO
   - Efficiently randomly generate a beige
   - Use WebGL to display the beige claw on canvas
   - Calculate how distant a colour is from the beige claw
+
+Plotting
+========
+
+* in spec/javascripts there's a plotter called plot.py
+* change into that directory
+* to generate beiges and not beiges use the following one-liners:
+`cat BeigeSpec.js | grep -i "true" | grep -o "#......" > beige_colors.txt` 
+`cat BeigeSpec.js | grep -i "false" | grep -o "#......" > not_beige.txt` 
+
+
+
