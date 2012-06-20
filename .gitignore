@@ -1,2 +1,4 @@
 Gemfile.lock
 build
+spec/javascripts/beige_colors.txt
+spec/javascripts/not_beige.txt
