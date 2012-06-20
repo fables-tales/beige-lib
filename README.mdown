@@ -49,9 +49,10 @@ Plotting
 
 * in spec/javascripts there's a plotter called plot.py
 * change into that directory
-* to generate beiges and not beiges use the following one-liners:
+* run:
 `cat BeigeSpec.js | grep -i "true" | grep -o "#......" > beige_colors.txt` 
 `cat BeigeSpec.js | grep -i "false" | grep -o "#......" > not_beige.txt` 
+* run `python plot.py`
 
 
 
